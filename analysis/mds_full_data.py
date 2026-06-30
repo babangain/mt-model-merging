@@ -20,7 +20,7 @@ Assumptions:
 
 Models:
   base: Qwen/Qwen2.5-3B-Instruct
-  ft:   baban/QwenTranslate_English_{Hindi,Bengali,Tamil,Telugu}
+  ft:   anonymous/AnonMT_English_{Hindi,Bengali,Tamil,Telugu}
 
 Outputs:
 - JSON with per-layer principal angles and subspace distances for each model pair
@@ -474,8 +474,8 @@ def mds_2d(D: np.ndarray, random_state: int = 0) -> np.ndarray:
 def _safe_label(name: str) -> str:
     if name == "Qwen/Qwen2.5-3B-Instruct":
         return "Base"
-    if name.startswith("baban/QwenTranslate_English_"):
-        return name.split("baban/QwenTranslate_English_", 1)[1]
+    if name.startswith("anonymous/AnonMT_English_"):
+        return name.split("anonymous/AnonMT_English_", 1)[1]
     return name
 
 
@@ -572,10 +572,10 @@ def main() -> None:
     base_model = "Qwen/Qwen2.5-3B-Instruct"
     model_names = [
         base_model,
-        "baban/QwenTranslate_English_Hindi",
-        "baban/QwenTranslate_English_Bengali",
-        "baban/QwenTranslate_English_Tamil",
-        "baban/QwenTranslate_English_Telugu",
+        "anonymous/AnonMT_English_Hindi",
+        "anonymous/AnonMT_English_Bengali",
+        "anonymous/AnonMT_English_Tamil",
+        "anonymous/AnonMT_English_Telugu",
     ]
 
     print(

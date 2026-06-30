@@ -28,10 +28,10 @@ python nua_en_indic.py \
   --acts_root ./ \
   --models \
     Qwen_Qwen2.5-3B-Instruct \
-    baban_QwenTranslate_English_Hindi \
-    baban_QwenTranslate_English_Bengali \
-    baban_QwenTranslate_English_Tamil \
-    baban_QwenTranslate_English_Telugu \
+    anonymous_AnonMT_English_Hindi \
+    anonymous_AnonMT_English_Bengali \
+    anonymous_AnonMT_English_Tamil \
+    anonymous_AnonMT_English_Telugu \
   --langs hi bn ta te \
   --span src \
   --normalize rate \

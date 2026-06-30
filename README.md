@@ -185,7 +185,7 @@ Export per-layer neuron-count JSON:
 cd analysis
 python plot_counts_json.py \
   --root ./activation_mask/indic_en \
-  --models Qwen_Qwen2.5-3B-Instruct baban_QwenTranslate_Hindi_English baban_QwenTranslate_Bengali_English baban_QwenTranslate_Tamil_English baban_QwenTranslate_Telugu_English \
+  --models Qwen_Qwen2.5-3B-Instruct anonymous_AnonMT_Hindi_English anonymous_AnonMT_Bengali_English anonymous_AnonMT_Tamil_English anonymous_AnonMT_Telugu_English \
   --out_dir ./matrix_json_indic_en
 ```
 
@@ -207,7 +207,7 @@ Indic to English:
 cd analysis
 python nua.py \
   --acts_root ./ \
-  --models Qwen_Qwen2.5-3B-Instruct baban_QwenTranslate_Hindi_English baban_QwenTranslate_Bengali_English baban_QwenTranslate_Tamil_English baban_QwenTranslate_Telugu_English \
+  --models Qwen_Qwen2.5-3B-Instruct anonymous_AnonMT_Hindi_English anonymous_AnonMT_Bengali_English anonymous_AnonMT_Tamil_English anonymous_AnonMT_Telugu_English \
   --langs hi bn ta te \
   --span tgt \
   --normalize rate \
@@ -221,7 +221,7 @@ English to Indic:
 cd analysis
 python nua_en_indic.py \
   --acts_root ./ \
-  --models Qwen_Qwen2.5-3B-Instruct baban_QwenTranslate_English_Hindi baban_QwenTranslate_English_Bengali baban_QwenTranslate_English_Tamil baban_QwenTranslate_English_Telugu \
+  --models Qwen_Qwen2.5-3B-Instruct anonymous_AnonMT_English_Hindi anonymous_AnonMT_English_Bengali anonymous_AnonMT_English_Tamil anonymous_AnonMT_English_Telugu \
   --langs hi bn ta te \
   --span tgt \
   --normalize rate \
@@ -246,7 +246,7 @@ python cka_masked.py \
   --lang hi \
   --data_dir data_masked_qwen/en_indic \
   --tokenizer_name Qwen/Qwen2.5-3B-Instruct \
-  --models Qwen/Qwen2.5-3B-Instruct baban/QwenTranslate_English_Hindi baban/QwenTranslate_English_Bengali baban/QwenTranslate_English_Tamil baban/QwenTranslate_English_Telugu \
+  --models Qwen/Qwen2.5-3B-Instruct anonymous/AnonMT_English_Hindi anonymous/AnonMT_English_Bengali anonymous/AnonMT_English_Tamil anonymous/AnonMT_English_Telugu \
   --N 128 \
   --max_length 512 \
   --span both \

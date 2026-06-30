@@ -18,7 +18,7 @@ For each language in --langs, the script:
 Usage:
   python compare_base_vs_ft.py \
     --base_pt ./activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/src.pt \
-    --ft_pt   ./activation_mask/indic_en/baban_QwenTranslate_Hindi_English/src.pt \
+    --ft_pt   ./activation_mask/indic_en/anonymous_AnonMT_Hindi_English/src.pt \
     --span src \
     --langs "hi bn ta te" \
     --out_dir ./compare_reports \

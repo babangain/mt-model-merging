@@ -1,11 +1,11 @@
 {
-  "root": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en",
+  "root": "./activation_mask/indic_en",
   "models": {
     "Qwen_Qwen2.5-3B-Instruct": {
       "src": {
         "model": "Qwen_Qwen2.5-3B-Instruct",
         "span": "src",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/src.pt",
+        "source_pt": "./activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/src.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -282,7 +282,7 @@
       "tgt": {
         "model": "Qwen_Qwen2.5-3B-Instruct",
         "span": "tgt",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/tgt.pt",
+        "source_pt": "./activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/tgt.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -557,11 +557,11 @@
         }
       }
     },
-    "baban_QwenTranslate_Hindi_English": {
+    "anonymous_AnonMT_Hindi_English": {
       "src": {
-        "model": "baban_QwenTranslate_Hindi_English",
+        "model": "anonymous_AnonMT_Hindi_English",
         "span": "src",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Hindi_English/src.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Hindi_English/src.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -836,9 +836,9 @@
         }
       },
       "tgt": {
-        "model": "baban_QwenTranslate_Hindi_English",
+        "model": "anonymous_AnonMT_Hindi_English",
         "span": "tgt",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Hindi_English/tgt.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Hindi_English/tgt.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -1113,11 +1113,11 @@
         }
       }
     },
-    "baban_QwenTranslate_Bengali_English": {
+    "anonymous_AnonMT_Bengali_English": {
       "src": {
-        "model": "baban_QwenTranslate_Bengali_English",
+        "model": "anonymous_AnonMT_Bengali_English",
         "span": "src",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Bengali_English/src.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Bengali_English/src.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -1392,9 +1392,9 @@
         }
       },
       "tgt": {
-        "model": "baban_QwenTranslate_Bengali_English",
+        "model": "anonymous_AnonMT_Bengali_English",
         "span": "tgt",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Bengali_English/tgt.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Bengali_English/tgt.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -1669,11 +1669,11 @@
         }
       }
     },
-    "baban_QwenTranslate_Tamil_English": {
+    "anonymous_AnonMT_Tamil_English": {
       "src": {
-        "model": "baban_QwenTranslate_Tamil_English",
+        "model": "anonymous_AnonMT_Tamil_English",
         "span": "src",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Tamil_English/src.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Tamil_English/src.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -1948,9 +1948,9 @@
         }
       },
       "tgt": {
-        "model": "baban_QwenTranslate_Tamil_English",
+        "model": "anonymous_AnonMT_Tamil_English",
         "span": "tgt",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Tamil_English/tgt.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Tamil_English/tgt.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -2225,11 +2225,11 @@
         }
       }
     },
-    "baban_QwenTranslate_Telugu_English": {
+    "anonymous_AnonMT_Telugu_English": {
       "src": {
-        "model": "baban_QwenTranslate_Telugu_English",
+        "model": "anonymous_AnonMT_Telugu_English",
         "span": "src",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Telugu_English/src.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Telugu_English/src.pt",
         "num_layers": 36,
         "languages": [
           "hi",
@@ -2504,9 +2504,9 @@
         }
       },
       "tgt": {
-        "model": "baban_QwenTranslate_Telugu_English",
+        "model": "anonymous_AnonMT_Telugu_English",
         "span": "tgt",
-        "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Telugu_English/tgt.pt",
+        "source_pt": "./activation_mask/indic_en/anonymous_AnonMT_Telugu_English/tgt.pt",
         "num_layers": 36,
         "languages": [
           "hi",

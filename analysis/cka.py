@@ -12,10 +12,10 @@ from transformers import AutoConfig, AutoModelForCausalLM
 # -----------------------------
 model_names = [
     "Qwen/Qwen2.5-3B-Instruct",
-    "baban/QwenTranslate_Hindi_English",
-    "baban/QwenTranslate_Bengali_English",
-    "baban/QwenTranslate_Tamil_English",
-    "baban/QwenTranslate_Telugu_English",
+    "anonymous/AnonMT_Hindi_English",
+    "anonymous/AnonMT_Bengali_English",
+    "anonymous/AnonMT_Tamil_English",
+    "anonymous/AnonMT_Telugu_English",
 ]
 
 lang = "hi"

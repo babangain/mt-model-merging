@@ -101,14 +101,14 @@ def make_pair_entries(lang):
             "source": "English",
             "target": lang,
             "data_prefix": f"MT_En_{lang}",
-            "model": f"baban/QwenTranslate_English_{lang}",
+            "model": f"anonymous/AnonMT_English_{lang}",
         },
         {
             "task_key": f"{lang}_to_English",
             "source": lang,
             "target": "English",
             "data_prefix": f"MT_{lang}_En",
-            "model": f"baban/QwenTranslate_{lang}_English",
+            "model": f"anonymous/AnonMT_{lang}_English",
         },
     ]
 

@@ -22,10 +22,10 @@ python plot_counts_json.py \
     --root ./activation_mask/indic_en \
     --models \
       Qwen_Qwen2.5-3B-Instruct \
-      baban_QwenTranslate_Hindi_English \
-      baban_QwenTranslate_Bengali_English \
-      baban_QwenTranslate_Tamil_English \
-      baban_QwenTranslate_Telugu_English \
+      anonymous_AnonMT_Hindi_English \
+      anonymous_AnonMT_Bengali_English \
+      anonymous_AnonMT_Tamil_English \
+      anonymous_AnonMT_Telugu_English \
     --out_dir ./matrix_json_indic_en
 
 Example (En->Indic):
@@ -33,10 +33,10 @@ Example (En->Indic):
     --root ./activation_mask/en_indic \
     --models \
       Qwen_Qwen2.5-3B-Instruct \
-      baban_QwenTranslate_English_Hindi \
-      baban_QwenTranslate_English_Bengali \
-      baban_QwenTranslate_English_Tamil \
-      baban_QwenTranslate_English_Telugu \
+      anonymous_AnonMT_English_Hindi \
+      anonymous_AnonMT_English_Bengali \
+      anonymous_AnonMT_English_Tamil \
+      anonymous_AnonMT_English_Telugu \
     --out_dir ./matrix_json_en_indic
 
 Notes
@@ -197,7 +197,7 @@ def main() -> None:
         "--models",
         nargs="+",
         required=True,
-        help="Model folder names under --root. Example: Qwen_Qwen2.5-3B-Instruct baban_QwenTranslate_Telugu_English ...",
+        help="Model folder names under --root. Example: Qwen_Qwen2.5-3B-Instruct anonymous_AnonMT_Telugu_English ...",
     )
     ap.add_argument("--out_dir", type=str, required=True)
     ap.add_argument(

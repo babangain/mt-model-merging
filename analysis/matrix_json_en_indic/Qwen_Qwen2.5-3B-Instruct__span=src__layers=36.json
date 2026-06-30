@@ -1,7 +1,7 @@
 {
   "model": "Qwen_Qwen2.5-3B-Instruct",
   "span": "src",
-  "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/en_indic/Qwen_Qwen2.5-3B-Instruct/src.pt",
+  "source_pt": "./activation_mask/en_indic/Qwen_Qwen2.5-3B-Instruct/src.pt",
   "num_layers": 36,
   "languages": [
     "hi",

@@ -22,7 +22,7 @@ Usage example:
   python compare_masks.py \
     --base_dir ./activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct \
     --ft_root ./activation_mask/indic_en \
-    --ft_template "baban_QwenTranslate_{name}_English" \
+    --ft_template "anonymous_AnonMT_{name}_English" \
     --langs "hi bn ta te" \
     --names "Hindi Bengali Tamil Telugu" \
     --out_dir ./mask_change_reports \
@@ -203,7 +203,7 @@ def main() -> None:
     ap.add_argument(
         "--ft_template",
         type=str,
-        default="baban_QwenTranslate_{name}_English",
+        default="anonymous_AnonMT_{name}_English",
         help="Fine-tuned folder name template under ft_root",
     )
     ap.add_argument("--langs", type=str, default="hi bn ta te", help="Language codes to compare (space-separated)")

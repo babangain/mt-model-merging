@@ -26,13 +26,13 @@ RUN_MERGED = 0
 BASE_MODEL = "Qwen/Qwen2.5-3B-Instruct"
 
 FINETUNED_MODELS = {
-    "German": "baban/QwenTranslate_English_German",
-    "French": "baban/QwenTranslate_English_French",
-    "Arabic": "baban/QwenTranslate_English_Arabic",
-    "Ukrainian": "baban/QwenTranslate_English_Ukrainian",
+    "German": "anonymous/AnonMT_English_German",
+    "French": "anonymous/AnonMT_English_French",
+    "Arabic": "anonymous/AnonMT_English_Arabic",
+    "Ukrainian": "anonymous/AnonMT_English_Ukrainian",
 }
 
-MULTILINGUAL_MODEL = "baban/QwenTranslate_English_to_Multilingual"
+MULTILINGUAL_MODEL = "anonymous/AnonMT_English_to_Multilingual"
 
 LANGUAGES = ["German", "French", "Arabic", "Ukrainian"]
 

@@ -7,7 +7,7 @@ export VLLM_USE_V1=0
 
 languages=("hi" "bn" "ta" "te")
 
-model=baban/QwenTranslate_Hindi_English
+model=anonymous/AnonMT_Hindi_English
 SAFE_NAME=$(echo "$model" | sed 's/[^A-Za-z0-9._-]/_/g')
 
 # Path where masked data already exists (built with Qwen template + teacher forcing)

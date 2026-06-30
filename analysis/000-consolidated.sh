@@ -7,7 +7,7 @@ export VLLM_USE_V1=0
 
 languages=("hi" "bn" "ta" "te")
 
-model=baban/QwenTranslate_Tamil_English
+model=anonymous/AnonMT_Tamil_English
 # model=Qwen/Qwen2.5-3B-Instruct
 SPAN="src"
 ######## SRC #####

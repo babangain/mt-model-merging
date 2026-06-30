@@ -28,10 +28,10 @@ python nua.py \
   --acts_root ./ \
   --models \
     Qwen_Qwen2.5-3B-Instruct \
-    baban_QwenTranslate_Hindi_English \
-    baban_QwenTranslate_Bengali_English \
-    baban_QwenTranslate_Tamil_English \
-    baban_QwenTranslate_Telugu_English \
+    anonymous_AnonMT_Hindi_English \
+    anonymous_AnonMT_Bengali_English \
+    anonymous_AnonMT_Tamil_English \
+    anonymous_AnonMT_Telugu_English \
   --langs hi bn ta te \
   --span tgt \
   --normalize rate \
@@ -44,10 +44,10 @@ python nua.py \
   --acts_root ./ \
   --models \
     Qwen_Qwen2.5-3B-Instruct \
-    baban_QwenTranslate_Hindi_English \
-    baban_QwenTranslate_Bengali_English \
-    baban_QwenTranslate_Tamil_English \
-    baban_QwenTranslate_Telugu_English \
+    anonymous_AnonMT_Hindi_English \
+    anonymous_AnonMT_Bengali_English \
+    anonymous_AnonMT_Tamil_English \
+    anonymous_AnonMT_Telugu_English \
   --langs hi bn ta te \
   --span tgt \
   --normalize rate \

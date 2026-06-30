@@ -18,10 +18,10 @@
 #   --tokenizer_name Qwen/Qwen2.5-3B-Instruct \
 #   --models \
 #     Qwen/Qwen2.5-3B-Instruct \
-#     baban/QwenTranslate_Hindi_English \
-#     baban/QwenTranslate_Bengali_English \
-#     baban/QwenTranslate_Tamil_English \
-#     baban/QwenTranslate_Telugu_English \
+#     anonymous/AnonMT_Hindi_English \
+#     anonymous/AnonMT_Bengali_English \
+#     anonymous/AnonMT_Tamil_English \
+#     anonymous/AnonMT_Telugu_English \
 #   --N 128 \
 #   --max_length 512 \
 #   --span both \
@@ -395,10 +395,10 @@ python cka_masked.py \
   --tokenizer_name Qwen/Qwen2.5-3B-Instruct \
   --models \
     Qwen/Qwen2.5-3B-Instruct \
-    baban/QwenTranslate_Hindi_English \
-    baban/QwenTranslate_Bengali_English \
-    baban/QwenTranslate_Tamil_English \
-    baban/QwenTranslate_Telugu_English \
+    anonymous/AnonMT_Hindi_English \
+    anonymous/AnonMT_Bengali_English \
+    anonymous/AnonMT_Tamil_English \
+    anonymous/AnonMT_Telugu_English \
   --N 128 \
   --max_length 512 \
   --span both \
@@ -412,10 +412,10 @@ python cka_masked.py \
   --tokenizer_name Qwen/Qwen2.5-3B-Instruct \
   --models \
     Qwen/Qwen2.5-3B-Instruct \
-    baban/QwenTranslate_English_Hindi \
-    baban/QwenTranslate_English_Bengali \
-    baban/QwenTranslate_English_Tamil \
-    baban/QwenTranslate_English_Telugu \
+    anonymous/AnonMT_English_Hindi \
+    anonymous/AnonMT_English_Bengali \
+    anonymous/AnonMT_English_Tamil \
+    anonymous/AnonMT_English_Telugu \
   --N 128 \
   --max_length 512 \
   --span both \

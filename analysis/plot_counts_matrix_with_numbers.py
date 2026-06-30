@@ -23,22 +23,22 @@ Usage:
 
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/indic_en/baban_QwenTranslate_Telugu_English/src.pt \
+    --pt ./activation_mask/indic_en/anonymous_AnonMT_Telugu_English/src.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_telugu_english
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/indic_en/baban_QwenTranslate_Tamil_English/src.pt \
+    --pt ./activation_mask/indic_en/anonymous_AnonMT_Tamil_English/src.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_tamil_english
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/indic_en/baban_QwenTranslate_Hindi_English/src.pt \
+    --pt ./activation_mask/indic_en/anonymous_AnonMT_Hindi_English/src.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_hindi_english
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/indic_en/baban_QwenTranslate_Bengali_English/src.pt \
+    --pt ./activation_mask/indic_en/anonymous_AnonMT_Bengali_English/src.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_bengali_english
 
@@ -50,22 +50,22 @@ Usage:
 
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/en_indic/baban_QwenTranslate_English_Telugu/tgt.pt \
+    --pt ./activation_mask/en_indic/anonymous_AnonMT_English_Telugu/tgt.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_en_indic_english_telugu
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/en_indic/baban_QwenTranslate_English_Tamil/tgt.pt \
+    --pt ./activation_mask/en_indic/anonymous_AnonMT_English_Tamil/tgt.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_en_indic_english_tamil
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/en_indic/baban_QwenTranslate_English_Hindi/tgt.pt \
+    --pt ./activation_mask/en_indic/anonymous_AnonMT_English_Hindi/tgt.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_en_indic_english_hindi
 
   python plot_counts_matrix_with_numbers.py \
-    --pt ./activation_mask/en_indic/baban_QwenTranslate_English_Bengali/tgt.pt \
+    --pt ./activation_mask/en_indic/anonymous_AnonMT_English_Bengali/tgt.pt \
     --langs "hi bn ta te" \
     --out_dir ./matrix_plots_en_indic_english_bengali
 

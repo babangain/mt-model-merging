@@ -1,7 +1,7 @@
 {
-  "model": "baban_QwenTranslate_English_Hindi",
+  "model": "anonymous_AnonMT_English_Hindi",
   "span": "src",
-  "source_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/en_indic/baban_QwenTranslate_English_Hindi/src.pt",
+  "source_pt": "./activation_mask/en_indic/anonymous_AnonMT_English_Hindi/src.pt",
   "num_layers": 36,
   "languages": [
     "hi",

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 LANGS = ["hi", "bn", "ta", "te"]
 
 BEFORE_DIR = "activation_mask"
-AFTER_DIR = "activation_mask_QwenTranslate_Hindi_En"
+AFTER_DIR = "activation_mask_AnonMT_Hindi_En"
 GRAPH_DIR = "graphs_comparison"
 
 os.makedirs(GRAPH_DIR, exist_ok=True)

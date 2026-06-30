@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Evaluate baban/QwenTranslate_Multilingual_Bidirectional on all bidirectional
+Evaluate anonymous/AnonMT_Multilingual_Bidirectional on all bidirectional
 English <-> Indic language pairs, test split only.
 
 Expected data files under DATA_DIR:
@@ -37,7 +37,7 @@ from typing import Dict, List, Tuple, Any
 # Defaults
 # ============================================================
 
-DEFAULT_MODEL = "baban/QwenTranslate_Multilingual_Bidirectional"
+DEFAULT_MODEL = "anonymous/AnonMT_Multilingual_Bidirectional"
 DEFAULT_DATA_DIR = "./data"
 DEFAULT_WORK_DIR = "./bidirectional_multilingual_test_eval"
 

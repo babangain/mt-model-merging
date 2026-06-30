@@ -47,9 +47,9 @@ for key, path in files.items():
     
     # Determine model name to filter
     if direction == "En→Indic":
-        target_model = f"baban/QwenTranslate_English_{lang_full}"
+        target_model = f"anonymous/AnonMT_English_{lang_full}"
     else:
-        target_model = f"baban/QwenTranslate_{lang_full}_English"
+        target_model = f"anonymous/AnonMT_{lang_full}_English"
     
     for span in ["src", "tgt"]:
         pairs = data["spans"][span]["pairs"]

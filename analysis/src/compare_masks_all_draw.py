@@ -6,10 +6,10 @@ LANGS = ["hi", "bn", "ta", "te"]
 
 BASE_DIR = "activation_mask_Qwen_Instruct"
 FT_DIRS = {
-    "QwenTranslate_Hindi_English": "activation_mask_QwenTranslate_Hindi_English",
-    "QwenTranslate_Bengali_English": "activation_mask_QwenTranslate_Bengali_English",
-    "QwenTranslate_Tamil_English": "activation_mask_QwenTranslate_Tamil_English",
-    "QwenTranslate_Telugu_English": "activation_mask_QwenTranslate_Telugu_English",
+    "AnonMT_Hindi_English": "activation_mask_AnonMT_Hindi_English",
+    "AnonMT_Bengali_English": "activation_mask_AnonMT_Bengali_English",
+    "AnonMT_Tamil_English": "activation_mask_AnonMT_Tamil_English",
+    "AnonMT_Telugu_English": "activation_mask_AnonMT_Telugu_English",
 }
 
 MODEL_ID = "qwen-5"

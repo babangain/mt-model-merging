@@ -61,7 +61,7 @@ def main() -> None:
     ap.add_argument("--languages", type=str, default="hi bn ta te")
     ap.add_argument("--seq_len", type=int, default=1024)
     ap.add_argument("--target_mb", type=int, default=100)
-    ap.add_argument("--dataset_pattern", type=str, default="baban/flores_en_{lang}_valid")
+    ap.add_argument("--dataset_pattern", type=str, default="anonymous/flores_en_{lang}_valid")
     args = ap.parse_args()
 
     os.makedirs(args.save_dir, exist_ok=True)

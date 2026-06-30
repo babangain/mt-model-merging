@@ -1,7 +1,7 @@
 {
-  "base_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/tgt.pt",
+  "base_pt": "./activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/tgt.pt",
   "file_prefix": "COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt",
-  "ft_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Hindi_English/tgt.pt",
+  "ft_pt": "./activation_mask/indic_en/anonymous_AnonMT_Hindi_English/tgt.pt",
   "langs": [
     "hi",
     "bn",
@@ -373,8 +373,8 @@
         }
       ],
       "plots": {
-        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=counts_base_ft_gained_lost.pdf",
-        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=jaccard_per_layer.pdf"
+        "counts_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=jaccard_per_layer.pdf"
       },
       "totals": {
         "base_total": 2167.0,
@@ -752,8 +752,8 @@
         }
       ],
       "plots": {
-        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=counts_base_ft_gained_lost.pdf",
-        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=jaccard_per_layer.pdf"
+        "counts_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=jaccard_per_layer.pdf"
       },
       "totals": {
         "base_total": 2027.0,
@@ -1131,8 +1131,8 @@
         }
       ],
       "plots": {
-        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=counts_base_ft_gained_lost.pdf",
-        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=jaccard_per_layer.pdf"
+        "counts_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=jaccard_per_layer.pdf"
       },
       "totals": {
         "base_total": 2441.0,
@@ -1510,8 +1510,8 @@
         }
       ],
       "plots": {
-        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=counts_base_ft_gained_lost.pdf",
-        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=jaccard_per_layer.pdf"
+        "counts_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "./compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=jaccard_per_layer.pdf"
       },
       "totals": {
         "base_total": 2246.0,

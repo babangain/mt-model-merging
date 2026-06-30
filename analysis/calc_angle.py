@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt
 # Paths
 # ============================================================
 JSON_PATH = Path(
-    "/home/baban/scripts/Language-Neurons-Manipulation/"
+    "./"
     "geom_outputs_en_indic_all/combined.tgt_principal_angles_and_maps.json"
 )
 
@@ -45,10 +45,10 @@ OUT_PDF = Path("principal_angles_selected.pdf")
 BASE = "Qwen/Qwen2.5-3B-Instruct"
 
 MODELS = {
-    "Hi": "baban/QwenTranslate_English_Hindi",
-    "Bn": "baban/QwenTranslate_English_Bengali",
-    "Ta": "baban/QwenTranslate_English_Tamil",
-    "Te": "baban/QwenTranslate_English_Telugu",
+    "Hi": "anonymous/AnonMT_English_Hindi",
+    "Bn": "anonymous/AnonMT_English_Bengali",
+    "Ta": "anonymous/AnonMT_English_Tamil",
+    "Te": "anonymous/AnonMT_English_Telugu",
 }
 
 CURVES = [

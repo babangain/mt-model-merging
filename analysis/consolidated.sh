@@ -1,5 +1,5 @@
 # MODEL_NAME=Qwen/Qwen2.5-3B-Instruct
-# # MODEL_NAME=baban/QwenTranslate_Telugu_English
+# # MODEL_NAME=anonymous/AnonMT_Telugu_English
 # mkdir activation_mask
 # bash 1-activation.sh $MODEL_NAME
 # bash 2-identify.sh
@@ -13,10 +13,10 @@ bash 1-activation.sh $MODEL_NAME
 # python draw_graph.py
 
 
-MODEL_NAME=baban/QwenTranslate_Hindi_English
+MODEL_NAME=anonymous/AnonMT_Hindi_English
 mkdir activation_mask
 bash 1-activation.sh $MODEL_NAME
 
-MODEL_NAME=baban/QwenTranslate_Bengali_English
+MODEL_NAME=anonymous/AnonMT_Bengali_English
 mkdir activation_mask
 bash 1-activation.sh $MODEL_NAME

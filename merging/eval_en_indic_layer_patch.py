@@ -41,10 +41,10 @@ from pathlib import Path
 BASE_MODEL = "Qwen/Qwen2.5-3B-Instruct"
 
 FINETUNED_MODELS = {
-    "Hindi": "baban/QwenTranslate_English_Hindi",
-    "Bengali": "baban/QwenTranslate_English_Bengali",
-    "Tamil": "baban/QwenTranslate_English_Tamil",
-    "Telugu": "baban/QwenTranslate_English_Telugu",
+    "Hindi": "anonymous/AnonMT_English_Hindi",
+    "Bengali": "anonymous/AnonMT_English_Bengali",
+    "Tamil": "anonymous/AnonMT_English_Tamil",
+    "Telugu": "anonymous/AnonMT_English_Telugu",
 }
 
 LANGUAGES = ["Hindi", "Bengali", "Tamil", "Telugu"]
@@ -1371,7 +1371,7 @@ def main():
     print(f"Task Arithmetic scaling: {TASK_ARITH_SCALINGS}", flush=True)
     print(f"SCE topk: {SCE_TOPK_VALUES}", flush=True)
     print("Removed methods: TIES, DARE", flush=True)
-    print("Skipped model: baban/QwenTranslate_English_Indic", flush=True)
+    print("Skipped model: anonymous/AnonMT_English_Indic", flush=True)
     print(f"Evaluation tokenizer: {EVAL_TOKENIZER}", flush=True)
     print("Validation variant: default MergeKit output only", flush=True)
     print("Test-only layer patch variants:", flush=True)

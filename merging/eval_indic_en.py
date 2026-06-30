@@ -16,14 +16,14 @@ from pathlib import Path
 BASE_MODEL = "Qwen/Qwen2.5-3B-Instruct"
 
 FINETUNED_MODELS = {
-    "Hindi": "baban/QwenTranslate_Hindi_English",
-    "Bengali": "baban/QwenTranslate_Bengali_English",
-    "Tamil": "baban/QwenTranslate_Tamil_English",
-    "Telugu": "baban/QwenTranslate_Telugu_English",
+    "Hindi": "anonymous/AnonMT_Hindi_English",
+    "Bengali": "anonymous/AnonMT_Bengali_English",
+    "Tamil": "anonymous/AnonMT_Tamil_English",
+    "Telugu": "anonymous/AnonMT_Telugu_English",
 }
 
 # Evaluate directly. Do not merge this model.
-MULTILINGUAL_MODEL = "baban/QwenTranslate_Indic_English"
+MULTILINGUAL_MODEL = "anonymous/AnonMT_Indic_English"
 
 LANGUAGES = ["Hindi", "Bengali", "Tamil", "Telugu"]
 
@@ -276,7 +276,7 @@ def patch_tokenizer_if_needed(model_name):
     """
     This preserves each model's tokenizer.
 
-    For baban/QwenTranslate_Indic_English, HF loading works with:
+    For anonymous/AnonMT_Indic_English, HF loading works with:
         extra_special_tokens={}
 
     But vLLM reloads the tokenizer internally without that argument. So this

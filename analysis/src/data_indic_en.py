@@ -25,7 +25,7 @@ target_total_bytes = target_size_mb * 1024 * 1024
 
 for lang in languages:
     flores_lang = lang_map[lang]
-    dataset_name = f"baban/flores_{flores_lang}_en_valid"
+    dataset_name = f"anonymous/flores_{flores_lang}_en_valid"
 
     print(f"Processing language: {lang} ({dataset_name})")
 

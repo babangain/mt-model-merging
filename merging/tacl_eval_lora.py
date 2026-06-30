@@ -106,10 +106,10 @@ LANG_CODES = {
 
 # Override these with env vars if repo names differ.
 ADAPTERS = {
-    "Hindi": os.environ.get("ADAPTER_HINDI", "baban/QwenTranslate_English_Hindi_LORA"),
-    "Bengali": os.environ.get("ADAPTER_BENGALI", "baban/QwenTranslate_English_Bengali_LORA"),
-    "Tamil": os.environ.get("ADAPTER_TAMIL", "baban/QwenTranslate_English_Tamil_LORA"),
-    "Telugu": os.environ.get("ADAPTER_TELUGU", "baban/QwenTranslate_English_Telugu_LORA"),
+    "Hindi": os.environ.get("ADAPTER_HINDI", "anonymous/AnonMT_English_Hindi_LORA"),
+    "Bengali": os.environ.get("ADAPTER_BENGALI", "anonymous/AnonMT_English_Bengali_LORA"),
+    "Tamil": os.environ.get("ADAPTER_TAMIL", "anonymous/AnonMT_English_Tamil_LORA"),
+    "Telugu": os.environ.get("ADAPTER_TELUGU", "anonymous/AnonMT_English_Telugu_LORA"),
 }
 
 MERGE_METHOD_ORDER = ["linear", "ties_svd", "dare_linear_svd", "cat"]
