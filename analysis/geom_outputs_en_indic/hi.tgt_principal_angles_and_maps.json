@@ -1,0 +1,996 @@
+{
+  "meta": {
+    "language": "hi",
+    "data_dir": "data_masked_qwen/en_indic",
+    "num_samples_requested": 256,
+    "num_samples_used_tgt": 256,
+    "max_length": 512,
+    "pad_token_id": 151643,
+    "models": [
+      "Qwen/Qwen2.5-3B-Instruct",
+      "baban/QwenTranslate_English_Hindi",
+      "baban/QwenTranslate_English_Bengali",
+      "baban/QwenTranslate_English_Tamil",
+      "baban/QwenTranslate_English_Telugu"
+    ],
+    "tokenizer_name": "Qwen/Qwen2.5-3B-Instruct",
+    "device": "cuda",
+    "dtype": "torch.bfloat16",
+    "batch_size": 8,
+    "use_cpu_offload": false,
+    "subspace_rank_k": 64,
+    "layers_total": 37,
+    "layers_mapped": [
+      0,
+      12,
+      24,
+      34,
+      35,
+      36
+    ]
+  },
+  "per_layer": {
+    "layer_00": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.05670936888359269,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.08759609754504645,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.08883596367002031,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.08265877749978542,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.09886099773034096,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.10123181119189546,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.0954226782612545,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.11138861408343989,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.10546389571916485,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.10345412259138474
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 3.087562417195748,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 4.69005601181418,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 4.937124873291932,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 4.183087485398165,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 5.382862900591094,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 5.579172769103847,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 5.0011244267929875,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 6.083444964901497,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 5.591823006797718,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 5.611043564510182
+      }
+    },
+    "layer_01": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.2664946150324994,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.2310768875142962,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.2124738248816009,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.2164527290648575,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3132036282851086,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.3050302038946492,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.2981735653763758,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.26161911448753283,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.25798044750092686,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.22421036692629498
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 13.010375677234244,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 11.258194448766517,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 10.134959788567244,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 10.23957883652582,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.271943210605045,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 14.830925529462153,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 14.520106446664776,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 13.070024097597653,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 12.824511657808703,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 11.055017987213862
+      }
+    },
+    "layer_02": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.3040995030135436,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.2703681273206914,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.2393750726653587,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.2452213684387131,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3239626438735554,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.3281249959230718,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.32808112658472427,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.2931087082170479,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.2813568606580537,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.26398355924669575
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 13.298448405684594,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 11.488490265690825,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 10.749124893672429,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 10.567937716298449,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.572938705375101,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 15.490889659950152,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 15.137018039456052,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 13.051620963493074,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 13.080595870275417,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 11.445513136372977
+      }
+    },
+    "layer_03": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.3535785956960081,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.32069467395460904,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.2766279095558267,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.29502475027829667,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.32866158775081133,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.35081436195889365,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.3303954708210034,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.30975036823755114,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.28669185999459607,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.2729281735544519
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 15.039685838484292,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 13.039162936945367,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 11.862862266977384,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 12.167311096390378,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.315926228658359,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 16.260962259211375,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 15.536682666252176,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 13.550005264470393,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 13.398269290160595,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 12.096195462229629
+      }
+    },
+    "layer_04": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.35851815370727286,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.3137019646408823,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.28339348013637106,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.29049302813745365,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.325579603501391,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.36098213360552867,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.35011058573431647,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.30566606099183224,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.30524049616328386,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.2831186158669171
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 15.035023908044769,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 13.032519784442634,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 12.327695965718878,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 12.31863629517166,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.634145084797353,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 16.71606317056071,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 16.21673006960432,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 14.06275201077317,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 13.79153282366585,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 12.531990468347757
+      }
+    },
+    "layer_05": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.3401541133050991,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.3061862996258521,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.2760192643658094,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.2855220731515416,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3348081343209335,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.35587325799408714,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.3467147192493081,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.3071267905229677,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.3110833963170197,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.2852928027026575
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 14.159309377898342,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 12.592440367550747,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 12.073038553799101,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 12.371426302147384,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.459835350344715,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 16.282181980840896,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 15.570593181913555,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 13.885624656214903,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 13.675531833083877,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 12.423471751265197
+      }
+    },
+    "layer_06": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.3210134637375047,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.29187946679928223,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.28847737189922495,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.29184090497904086,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.30958020566740724,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.33435764979302784,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.3311315463309896,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.29486152733433246,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.29482726725636726,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.27856992118319146
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 14.327492340671466,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 13.007991274245086,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 12.81993106898716,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 13.094473393925771,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 15.581923571619882,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 16.80862760380341,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 16.44874563302247,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 15.038496847203135,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 15.02632477243278,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 13.506814967864425
+      }
+    },
+    "layer_07": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.3301839602313738,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.3152120500888838,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.30366061979905135,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.3143466871583474,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3441185289203371,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.3632114613100918,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.36709390687068416,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.32703045465519426,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.3330856943066862,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.30677375204853846
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 15.115569961601793,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 13.798511801864208,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 13.794319187709988,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 14.544268972898628,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 16.629458781648843,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 17.875541513961338,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 18.075748601803443,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 16.27775961871898,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 16.351673087824743,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 15.08451528371344
+      }
+    },
+    "layer_08": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.37249384471638025,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.33234607293483404,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.32853013162535716,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.35181398017486565,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3705566589265183,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.39594992905648835,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.39593234915319697,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.3518237611621949,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.359633614659627,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.33362604582976474
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 17.08794179490213,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 15.447369500212098,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 15.372989245677907,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 16.48090465191177,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 18.340003275849696,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 19.785161541889924,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 19.79218324556593,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 17.464380522591895,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 17.995913678385026,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 16.720702044423348
+      }
+    },
+    "layer_09": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.392539929959916,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.3535591073651098,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.3484520400800126,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.3643989499090332,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.3930345462296421,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.42197786287148403,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.41398373944551425,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.3742340384235035,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.38098864185444714,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.3549169142495435
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 18.396240057047258,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 16.910051227671296,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 16.528292497828108,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 18.048761893863063,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 19.47397676531167,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 21.137741729098927,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 21.38195370659557,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 18.753941780548175,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 18.955584203437887,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 17.738609266864476
+      }
+    },
+    "layer_10": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.4398153393477034,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.3944061672381603,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.3902013201763336,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.4235165872639455,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.43194339732158116,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.45670771048473735,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.46628259376360576,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.4013764528388446,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.42085834598358257,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.3941786273943875
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 20.749847104969433,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 18.626400288891524,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 18.6403938386249,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 20.11776863234207,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 21.73055886721851,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 23.5076454973237,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 23.660770726850302,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 20.488782103588285,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 21.065720014001,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 19.216678468365615
+      }
+    },
+    "layer_11": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.4460503521655536,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.42003626580755055,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.4116766402359881,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.45112526375004347,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.45389858758157126,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.4884577065186048,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5016819679170693,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.43872563788926955,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.45340634995076456,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.4211978249304952
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 22.475386288036923,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 20.610441872396176,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 20.4435518687671,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 22.578864803234467,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 23.44963467894315,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 25.170089536748794,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 25.63214748259478,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 22.12459275576015,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 22.858047428687478,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 21.287785677010653
+      }
+    },
+    "layer_12": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.46794375048895803,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.44598382899112143,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.4464854429582452,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.4768704310866942,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.47217872798485444,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.49998276666106717,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.514060305931821,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.459331628282642,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.474235171019236,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.43598838909116316
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 23.28419761604237,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 21.553138416027615,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 21.91342698978646,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 24.040178894720533,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 23.993698297753554,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 25.574700070174323,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 27.10910257018429,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 23.25000202641722,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 23.93671142961164,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 22.00124307846552
+      }
+    },
+    "layer_13": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.47735877072529476,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.4625113599131501,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.47314998192023944,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5004428284339354,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.47089743743957013,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.509668827313297,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5277950421970118,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.4659626896557861,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.48064060802278186,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.44539462335662355
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 23.75474770459772,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 22.405069720244498,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 23.032060360719786,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 25.42218573015422,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.05638665398321,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 26.737378069769115,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 27.99797659504283,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 23.845658836197984,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 25.041961028655393,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 22.940005942690583
+      }
+    },
+    "layer_14": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.4809244350909518,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.4651465035594776,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.4786075045961188,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5173490521130705,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.4789650687255251,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5257872418089634,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5432408234440441,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.47947325169667504,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.4963626797115251,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.4540530539506669
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 23.771628675804717,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 22.780028701745483,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 23.961909624591364,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 26.647287496959443,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.769398241237475,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 27.378271123895118,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 28.687901640526732,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 24.461113145339855,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 25.898940873878523,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 23.464687878825032
+      }
+    },
+    "layer_15": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.49064680419473944,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.47502047473143016,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.4995250405517935,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5333362152458254,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.4747427803138089,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5186826437359595,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5500726613653237,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.47673493676859197,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5016137931012832,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.4608292838153833
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 24.154322363750488,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 23.308647755673228,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 24.369948299620482,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 26.982394366176333,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.426738373066918,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 27.109030958983052,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 29.019087512288934,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 23.978470926145015,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 25.827852555784112,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 23.13791667742618
+      }
+    },
+    "layer_16": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5037777709312213,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.4910042113904709,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.50433042036697,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5406171316866324,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.48483366373327,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.530454428356152,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5573997127887799,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.48081002157954694,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5117214291382786,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.46846730646639345
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 25.151639260989427,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 24.040512099927547,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 25.097459159634738,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 27.814853437536456,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.348082824655457,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 27.379591128505616,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 29.67838779837826,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 23.938009062224943,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 26.46370056477601,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 23.232443180700578
+      }
+    },
+    "layer_17": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5027070774175622,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.4876054115114641,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.5064646557196473,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.548849633681086,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.4773360001485245,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.527080674831887,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5634884307084477,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.4779602709934655,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5198318287325703,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.47233035133268375
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 25.125598626602695,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 24.123181239208094,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 25.474201924561832,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 28.505984846300976,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.301722143352983,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 26.866078653859375,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 29.721504901507018,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 24.118403284618452,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 26.789379536632634,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 23.373498249586987
+      }
+    },
+    "layer_18": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5198837876764931,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5073032058307522,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.527419985986383,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5621315941147218,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.49158896880351904,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5409039067018709,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5722558996397508,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.4879592852437481,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5315171797196642,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.48255404725293755
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 26.56317285892633,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 25.64220061017346,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 26.99370004301476,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 29.77863041269795,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 24.79641910081982,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 27.989141643734776,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 30.738284868454443,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 25.244472157590863,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 27.555588240913874,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 24.604918893846154
+      }
+    },
+    "layer_19": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5429993829526645,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5307313757612627,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.549593536317042,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5811289315832421,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.505640676091665,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5527423312302999,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5863065711724177,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5038554158764045,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5440189054576484,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5016715544184567
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 27.925443723649916,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 27.263203468945612,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 28.045193537675303,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 30.721000570054976,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 25.26583110282985,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 28.926039562522902,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 31.70261491328747,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 25.675600713679327,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 28.652314517430156,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 25.148780709873193
+      }
+    },
+    "layer_20": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5472605112662204,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5421919330429094,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.5572022015474225,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5846506156002887,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5008773519428728,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5504974600260935,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5828677972397932,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5054243434731162,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5398523007651501,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5005274222574039
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 28.293644186649892,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 27.764234553834086,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 29.040336727473594,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 30.816468834038936,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 25.40004815718558,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 28.80056880869936,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 31.090422935676404,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 25.732217201385303,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 28.67464119953891,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 25.177048736389956
+      }
+    },
+    "layer_21": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5744253365934512,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5667875828531242,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.5871236796947954,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6034628578826823,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5233667366005591,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5700585021590869,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5955180055894536,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5168420637626192,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5488327698958729,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5130425464712318
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 29.790844841088294,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 29.19870749826849,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 30.540113735548807,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 31.512306072234782,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 25.949959839653246,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 29.69955125771081,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.086531796320685,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 26.100358463156113,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 28.748026320569817,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 25.289472306579373
+      }
+    },
+    "layer_22": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.572823758000311,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.561250103035669,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.5797610380739658,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.5932407400676721,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5176339024247686,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5615958751667909,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5885784711836582,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5156882552302111,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5428826928409478,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5039600693561022
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 29.50101194238824,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 28.829408114606522,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 30.206541873772174,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 31.096186596931965,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 26.15521024969577,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 29.323646911347318,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 31.491982332181706,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 26.2524152742208,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 27.97076554790749,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 25.58692350239115
+      }
+    },
+    "layer_23": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5723644112218877,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5672301124798403,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.5829723430052942,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6009256557711049,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5260121807984343,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5688696647874987,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5919088747769305,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.523674073423316,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5517336552085632,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5123961943486903
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 30.70621232351671,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 29.477679033392,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 31.61491447070852,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 31.962101342186944,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 27.30179943406133,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 30.570843092135767,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.00017487569982,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 27.626383928436326,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 28.921355183878426,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 26.332040989536054
+      }
+    },
+    "layer_24": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5887577080176032,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5797551953217468,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6025303138597234,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6134705461759985,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5369596185721026,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5859938780534812,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6012807000761052,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5381450693643844,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5618789699315268,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5228482607112034
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.114948946256394,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 30.152932311506426,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 32.12321395317613,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 32.43412034661009,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 27.47188616320726,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 31.2427133937246,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.35677248476475,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 27.975657277684643,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 29.449292597343558,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 26.505776615605576
+      }
+    },
+    "layer_25": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5924060574364314,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5942321663566943,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6138322299995285,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.624260284252014,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5406587531540639,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5885308344084134,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6023501440979746,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5437135458958346,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5635679455829952,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.522934764715709
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.78438997005456,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 31.108161795242435,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 32.89636010122151,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 34.20652724225452,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 27.870024358071852,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 31.516955391369926,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 33.117363829568696,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 28.06754750536397,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 29.745446837965765,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 26.831350818370524
+      }
+    },
+    "layer_26": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5962220290127335,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6027840182436724,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6311605121625998,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6334238638005157,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5457022657025896,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6004441939331772,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6085890577489399,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5538890607357186,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5665023300311786,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5309479430403823
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.8169293132943,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 32.32818577147357,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 34.49716958272956,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 34.802785267909705,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 28.54224378945564,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 32.2732404582769,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 33.305720390482556,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 28.87305445637131,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 29.570987921240203,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 27.31911413620567
+      }
+    },
+    "layer_27": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.585919400043004,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5932749406150556,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6178867827589345,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6195827834506553,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5371239662784826,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5866852361506765,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5947218859449469,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5409860412990944,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5555507026349232,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5204949060410591
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.075257770822162,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 31.373221116151164,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 32.886150566174535,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 33.28557872231477,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 27.697634269290127,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 31.217987281600188,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.20326017428355,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 28.33285506824714,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 29.111759127109504,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 26.47428196647812
+      }
+    },
+    "layer_28": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5901182574014077,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5999231609344948,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6245118240382151,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6254821818888905,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5470108145872131,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5982892327762506,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6035759497969264,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.552944731145444,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5687842294654043,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5407862035502867
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 30.42158100843158,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 31.239972763554043,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 32.82886752125965,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 33.651952618009815,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 28.28920171946966,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 31.83448644882833,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.66442349481145,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 28.677891511760578,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 29.980990400514834,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 27.26521006576541
+      }
+    },
+    "layer_29": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5924383056517897,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6018173331043706,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.628366011254865,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6313292012164577,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5428718545266165,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.5987474018682186,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.5994474141865072,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5587078094293051,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5700764689502217,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.542180323067446
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 30.731141963215144,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 32.05203062236647,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 33.570652617268344,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 33.78500573232488,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 28.555525365957042,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 31.824731939003655,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 32.096413462659655,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 29.026814421232096,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 30.098019532983507,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 28.143428635299887
+      }
+    },
+    "layer_30": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5950833529449607,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6051004860306974,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6383316926061503,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6412736588898924,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5572405203596468,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6118351133969383,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6151409834496766,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5748527941586119,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5874959102234397,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5555288870033463
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.6546497994239,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 32.29279459795221,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 34.404631981355266,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 34.95330966457889,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 29.53831286412788,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 33.37356970232555,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 33.55831839906217,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 30.066038443672987,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 31.36101190589627,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 29.152402293567683
+      }
+    },
+    "layer_31": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5899153637994907,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.606172917536004,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6366778327437154,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6388535028894418,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5557006897541468,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6101689965392444,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6156976624973046,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5691126841587187,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5852947063109427,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5544888532722353
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 31.08526546840504,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 32.2067940896318,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 34.357730718127186,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 35.236061934502565,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 29.18700953007459,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 32.85205753900085,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 34.00712269619433,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 30.645138042934207,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 31.115109856830642,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 28.80621665309349
+      }
+    },
+    "layer_32": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5723145560127647,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5908750476386696,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6276333047451842,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6295110492486741,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5462027844753147,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6033955887285227,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6079150980238446,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5617301641587289,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5741712191226861,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5476230999526565
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 29.371395652712472,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 30.6863839712763,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 33.386928151790244,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 33.91737490297153,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 28.01612262113634,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 32.50872986595013,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 33.339830919410794,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 29.541665646135662,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 30.596354974849117,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 28.675345703740206
+      }
+    },
+    "layer_33": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5723205361740259,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.5976359664554122,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6369943683731127,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6481127285065634,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5657278593657069,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6245178819193005,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6348442597533305,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.5840828691910452,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.5993249699414182,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5646170192181589
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 29.578361901754818,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 31.507619874531876,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 35.02892648370724,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 36.02346033850405,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 29.384174811486783,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 34.253303322107755,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 35.87244530328142,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 31.35367560731282,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 32.5923756734002,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 30.017571855425636
+      }
+    },
+    "layer_34": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.5806159371923441,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6067934316215299,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6453923095327714,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6543452456049634,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.5819299609148414,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.6447643777278158,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6540727268802927,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.6002274777152072,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.6173189409978769,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.5833480724776002
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 30.5558993935884,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 32.646742504443196,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 36.30456431837989,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 37.365511391197444,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 31.347356605274157,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 36.41053820164095,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 37.35570699476797,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 32.64641512812181,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 33.563296413427224,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 31.870845772956237
+      }
+    },
+    "layer_35": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.6239105079594981,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6526430375735391,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.6861148268450066,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.6915078424335007,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.6285254762659035,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.684273190879715,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.6945756095547901,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.6445787418864996,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.655933278782042,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.6219540753017267
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 33.9487259484839,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 36.12559561881673,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 39.29122007347617,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 40.92572772016882,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 34.871682083630034,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 39.447541666558706,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 40.938139777919815,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 36.05664573315364,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 37.40391861132511,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 34.17492786601405
+      }
+    },
+    "layer_36": {
+      "dist": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 0.6708531173098675,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 0.6938419723278741,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 0.7255409095030692,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 0.7274501078214237,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 0.6626342305019699,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 0.7164483426902916,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 0.7207951738157643,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 0.6635969795014581,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 0.675632531130563,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 0.6432667674534103
+      },
+      "median_angle": {
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Hindi": 38.35578328578761,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Bengali": 40.465942933159766,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Tamil": 43.869477292289226,
+        "Qwen/Qwen2.5-3B-Instruct|||baban/QwenTranslate_English_Telugu": 44.67608149901945,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Bengali": 37.9145719869439,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Tamil": 43.41815898318311,
+        "baban/QwenTranslate_English_Hindi|||baban/QwenTranslate_English_Telugu": 43.83283834782553,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Tamil": 38.834821220328365,
+        "baban/QwenTranslate_English_Bengali|||baban/QwenTranslate_English_Telugu": 39.33954690823852,
+        "baban/QwenTranslate_English_Tamil|||baban/QwenTranslate_English_Telugu": 36.19384106746189
+      }
+    }
+  }
+}

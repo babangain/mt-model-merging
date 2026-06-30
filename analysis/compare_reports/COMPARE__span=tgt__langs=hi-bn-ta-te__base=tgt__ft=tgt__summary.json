@@ -1,0 +1,1530 @@
+{
+  "base_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/Qwen_Qwen2.5-3B-Instruct/tgt.pt",
+  "file_prefix": "COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt",
+  "ft_pt": "/home/baban/scripts/Language-Neurons-Manipulation/activation_mask/indic_en/baban_QwenTranslate_Hindi_English/tgt.pt",
+  "langs": [
+    "hi",
+    "bn",
+    "ta",
+    "te"
+  ],
+  "per_language": {
+    "bn": {
+      "per_layer": [
+        {
+          "base": 475,
+          "ft": 256,
+          "gained": 88,
+          "jaccard": 0.2984014209591474,
+          "layer": 0,
+          "lost": 307,
+          "overlap": 168,
+          "union": 563
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 1,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 2,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 3,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 4,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 1,
+          "gained": 1,
+          "jaccard": 0.0,
+          "layer": 5,
+          "lost": 0,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 1,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 0.0,
+          "layer": 6,
+          "lost": 1,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 7,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 8,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 9,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 2,
+          "ft": 5,
+          "gained": 5,
+          "jaccard": 0.0,
+          "layer": 10,
+          "lost": 2,
+          "overlap": 0,
+          "union": 7
+        },
+        {
+          "base": 4,
+          "ft": 11,
+          "gained": 11,
+          "jaccard": 0.0,
+          "layer": 11,
+          "lost": 4,
+          "overlap": 0,
+          "union": 15
+        },
+        {
+          "base": 7,
+          "ft": 4,
+          "gained": 4,
+          "jaccard": 0.0,
+          "layer": 12,
+          "lost": 7,
+          "overlap": 0,
+          "union": 11
+        },
+        {
+          "base": 11,
+          "ft": 12,
+          "gained": 7,
+          "jaccard": 0.2777777777777778,
+          "layer": 13,
+          "lost": 6,
+          "overlap": 5,
+          "union": 18
+        },
+        {
+          "base": 12,
+          "ft": 6,
+          "gained": 3,
+          "jaccard": 0.2,
+          "layer": 14,
+          "lost": 9,
+          "overlap": 3,
+          "union": 15
+        },
+        {
+          "base": 25,
+          "ft": 33,
+          "gained": 20,
+          "jaccard": 0.28888888888888886,
+          "layer": 15,
+          "lost": 12,
+          "overlap": 13,
+          "union": 45
+        },
+        {
+          "base": 25,
+          "ft": 27,
+          "gained": 15,
+          "jaccard": 0.3,
+          "layer": 16,
+          "lost": 13,
+          "overlap": 12,
+          "union": 40
+        },
+        {
+          "base": 76,
+          "ft": 103,
+          "gained": 72,
+          "jaccard": 0.20945945945945946,
+          "layer": 17,
+          "lost": 45,
+          "overlap": 31,
+          "union": 148
+        },
+        {
+          "base": 76,
+          "ft": 105,
+          "gained": 80,
+          "jaccard": 0.16025641025641027,
+          "layer": 18,
+          "lost": 51,
+          "overlap": 25,
+          "union": 156
+        },
+        {
+          "base": 102,
+          "ft": 170,
+          "gained": 143,
+          "jaccard": 0.11020408163265306,
+          "layer": 19,
+          "lost": 75,
+          "overlap": 27,
+          "union": 245
+        },
+        {
+          "base": 87,
+          "ft": 212,
+          "gained": 181,
+          "jaccard": 0.11567164179104478,
+          "layer": 20,
+          "lost": 56,
+          "overlap": 31,
+          "union": 268
+        },
+        {
+          "base": 71,
+          "ft": 153,
+          "gained": 130,
+          "jaccard": 0.11442786069651742,
+          "layer": 21,
+          "lost": 48,
+          "overlap": 23,
+          "union": 201
+        },
+        {
+          "base": 51,
+          "ft": 176,
+          "gained": 154,
+          "jaccard": 0.1073170731707317,
+          "layer": 22,
+          "lost": 29,
+          "overlap": 22,
+          "union": 205
+        },
+        {
+          "base": 111,
+          "ft": 261,
+          "gained": 219,
+          "jaccard": 0.12727272727272726,
+          "layer": 23,
+          "lost": 69,
+          "overlap": 42,
+          "union": 330
+        },
+        {
+          "base": 101,
+          "ft": 228,
+          "gained": 204,
+          "jaccard": 0.07868852459016394,
+          "layer": 24,
+          "lost": 77,
+          "overlap": 24,
+          "union": 305
+        },
+        {
+          "base": 92,
+          "ft": 265,
+          "gained": 237,
+          "jaccard": 0.0851063829787234,
+          "layer": 25,
+          "lost": 64,
+          "overlap": 28,
+          "union": 329
+        },
+        {
+          "base": 82,
+          "ft": 209,
+          "gained": 183,
+          "jaccard": 0.09811320754716982,
+          "layer": 26,
+          "lost": 56,
+          "overlap": 26,
+          "union": 265
+        },
+        {
+          "base": 76,
+          "ft": 187,
+          "gained": 172,
+          "jaccard": 0.06048387096774194,
+          "layer": 27,
+          "lost": 61,
+          "overlap": 15,
+          "union": 248
+        },
+        {
+          "base": 88,
+          "ft": 156,
+          "gained": 136,
+          "jaccard": 0.08928571428571429,
+          "layer": 28,
+          "lost": 68,
+          "overlap": 20,
+          "union": 224
+        },
+        {
+          "base": 48,
+          "ft": 126,
+          "gained": 118,
+          "jaccard": 0.04819277108433735,
+          "layer": 29,
+          "lost": 40,
+          "overlap": 8,
+          "union": 166
+        },
+        {
+          "base": 44,
+          "ft": 148,
+          "gained": 134,
+          "jaccard": 0.07865168539325842,
+          "layer": 30,
+          "lost": 30,
+          "overlap": 14,
+          "union": 178
+        },
+        {
+          "base": 40,
+          "ft": 110,
+          "gained": 101,
+          "jaccard": 0.06382978723404255,
+          "layer": 31,
+          "lost": 31,
+          "overlap": 9,
+          "union": 141
+        },
+        {
+          "base": 69,
+          "ft": 128,
+          "gained": 116,
+          "jaccard": 0.06486486486486487,
+          "layer": 32,
+          "lost": 57,
+          "overlap": 12,
+          "union": 185
+        },
+        {
+          "base": 158,
+          "ft": 227,
+          "gained": 199,
+          "jaccard": 0.0784313725490196,
+          "layer": 33,
+          "lost": 130,
+          "overlap": 28,
+          "union": 357
+        },
+        {
+          "base": 174,
+          "ft": 181,
+          "gained": 164,
+          "jaccard": 0.05029585798816568,
+          "layer": 34,
+          "lost": 157,
+          "overlap": 17,
+          "union": 338
+        },
+        {
+          "base": 59,
+          "ft": 81,
+          "gained": 77,
+          "jaccard": 0.029411764705882353,
+          "layer": 35,
+          "lost": 55,
+          "overlap": 4,
+          "union": 136
+        }
+      ],
+      "plots": {
+        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=bn__span=tgt__plot=jaccard_per_layer.pdf"
+      },
+      "totals": {
+        "base_total": 2167.0,
+        "ft_total": 3581.0,
+        "gained_total": 2974.0,
+        "jaccard_global": 0.11807041431628088,
+        "jaccard_mean_layer": 0.2815286985026235,
+        "lost_total": 1560.0,
+        "num_layers": 36.0,
+        "overlap_total": 607.0,
+        "union_total": 5141.0
+      }
+    },
+    "hi": {
+      "per_layer": [
+        {
+          "base": 327,
+          "ft": 195,
+          "gained": 98,
+          "jaccard": 0.22823529411764706,
+          "layer": 0,
+          "lost": 230,
+          "overlap": 97,
+          "union": 425
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 1,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 2,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 3,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 4,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 1,
+          "gained": 1,
+          "jaccard": 0.0,
+          "layer": 5,
+          "lost": 0,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 1,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 0.0,
+          "layer": 6,
+          "lost": 1,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 7,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 8,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 9,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 1,
+          "ft": 7,
+          "gained": 7,
+          "jaccard": 0.0,
+          "layer": 10,
+          "lost": 1,
+          "overlap": 0,
+          "union": 8
+        },
+        {
+          "base": 3,
+          "ft": 10,
+          "gained": 10,
+          "jaccard": 0.0,
+          "layer": 11,
+          "lost": 3,
+          "overlap": 0,
+          "union": 13
+        },
+        {
+          "base": 4,
+          "ft": 6,
+          "gained": 6,
+          "jaccard": 0.0,
+          "layer": 12,
+          "lost": 4,
+          "overlap": 0,
+          "union": 10
+        },
+        {
+          "base": 11,
+          "ft": 10,
+          "gained": 6,
+          "jaccard": 0.23529411764705882,
+          "layer": 13,
+          "lost": 7,
+          "overlap": 4,
+          "union": 17
+        },
+        {
+          "base": 13,
+          "ft": 8,
+          "gained": 5,
+          "jaccard": 0.16666666666666666,
+          "layer": 14,
+          "lost": 10,
+          "overlap": 3,
+          "union": 18
+        },
+        {
+          "base": 23,
+          "ft": 36,
+          "gained": 22,
+          "jaccard": 0.3111111111111111,
+          "layer": 15,
+          "lost": 9,
+          "overlap": 14,
+          "union": 45
+        },
+        {
+          "base": 26,
+          "ft": 28,
+          "gained": 14,
+          "jaccard": 0.35,
+          "layer": 16,
+          "lost": 12,
+          "overlap": 14,
+          "union": 40
+        },
+        {
+          "base": 85,
+          "ft": 116,
+          "gained": 71,
+          "jaccard": 0.28846153846153844,
+          "layer": 17,
+          "lost": 40,
+          "overlap": 45,
+          "union": 156
+        },
+        {
+          "base": 75,
+          "ft": 113,
+          "gained": 84,
+          "jaccard": 0.18238993710691823,
+          "layer": 18,
+          "lost": 46,
+          "overlap": 29,
+          "union": 159
+        },
+        {
+          "base": 94,
+          "ft": 168,
+          "gained": 134,
+          "jaccard": 0.14912280701754385,
+          "layer": 19,
+          "lost": 60,
+          "overlap": 34,
+          "union": 228
+        },
+        {
+          "base": 94,
+          "ft": 215,
+          "gained": 185,
+          "jaccard": 0.10752688172043011,
+          "layer": 20,
+          "lost": 64,
+          "overlap": 30,
+          "union": 279
+        },
+        {
+          "base": 71,
+          "ft": 163,
+          "gained": 136,
+          "jaccard": 0.13043478260869565,
+          "layer": 21,
+          "lost": 44,
+          "overlap": 27,
+          "union": 207
+        },
+        {
+          "base": 53,
+          "ft": 189,
+          "gained": 163,
+          "jaccard": 0.12037037037037036,
+          "layer": 22,
+          "lost": 27,
+          "overlap": 26,
+          "union": 216
+        },
+        {
+          "base": 110,
+          "ft": 245,
+          "gained": 206,
+          "jaccard": 0.12341772151898735,
+          "layer": 23,
+          "lost": 71,
+          "overlap": 39,
+          "union": 316
+        },
+        {
+          "base": 104,
+          "ft": 226,
+          "gained": 199,
+          "jaccard": 0.0891089108910891,
+          "layer": 24,
+          "lost": 77,
+          "overlap": 27,
+          "union": 303
+        },
+        {
+          "base": 88,
+          "ft": 269,
+          "gained": 242,
+          "jaccard": 0.08181818181818182,
+          "layer": 25,
+          "lost": 61,
+          "overlap": 27,
+          "union": 330
+        },
+        {
+          "base": 80,
+          "ft": 221,
+          "gained": 191,
+          "jaccard": 0.11070110701107011,
+          "layer": 26,
+          "lost": 50,
+          "overlap": 30,
+          "union": 271
+        },
+        {
+          "base": 77,
+          "ft": 246,
+          "gained": 224,
+          "jaccard": 0.07308970099667775,
+          "layer": 27,
+          "lost": 55,
+          "overlap": 22,
+          "union": 301
+        },
+        {
+          "base": 94,
+          "ft": 198,
+          "gained": 170,
+          "jaccard": 0.10606060606060606,
+          "layer": 28,
+          "lost": 66,
+          "overlap": 28,
+          "union": 264
+        },
+        {
+          "base": 54,
+          "ft": 151,
+          "gained": 138,
+          "jaccard": 0.06770833333333333,
+          "layer": 29,
+          "lost": 41,
+          "overlap": 13,
+          "union": 192
+        },
+        {
+          "base": 46,
+          "ft": 164,
+          "gained": 149,
+          "jaccard": 0.07692307692307693,
+          "layer": 30,
+          "lost": 31,
+          "overlap": 15,
+          "union": 195
+        },
+        {
+          "base": 37,
+          "ft": 128,
+          "gained": 120,
+          "jaccard": 0.050955414012738856,
+          "layer": 31,
+          "lost": 29,
+          "overlap": 8,
+          "union": 157
+        },
+        {
+          "base": 70,
+          "ft": 145,
+          "gained": 133,
+          "jaccard": 0.059113300492610835,
+          "layer": 32,
+          "lost": 58,
+          "overlap": 12,
+          "union": 203
+        },
+        {
+          "base": 152,
+          "ft": 208,
+          "gained": 184,
+          "jaccard": 0.07142857142857142,
+          "layer": 33,
+          "lost": 128,
+          "overlap": 24,
+          "union": 336
+        },
+        {
+          "base": 179,
+          "ft": 183,
+          "gained": 163,
+          "jaccard": 0.05847953216374269,
+          "layer": 34,
+          "lost": 159,
+          "overlap": 20,
+          "union": 342
+        },
+        {
+          "base": 55,
+          "ft": 58,
+          "gained": 54,
+          "jaccard": 0.03669724770642202,
+          "layer": 35,
+          "lost": 51,
+          "overlap": 4,
+          "union": 109
+        }
+      ],
+      "plots": {
+        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=hi__span=tgt__plot=jaccard_per_layer.pdf"
+      },
+      "totals": {
+        "base_total": 2027.0,
+        "ft_total": 3707.0,
+        "gained_total": 3115.0,
+        "jaccard_global": 0.11513029949436017,
+        "jaccard_mean_layer": 0.28541986697736355,
+        "lost_total": 1435.0,
+        "num_layers": 36.0,
+        "overlap_total": 592.0,
+        "union_total": 5142.0
+      }
+    },
+    "ta": {
+      "per_layer": [
+        {
+          "base": 756,
+          "ft": 444,
+          "gained": 150,
+          "jaccard": 0.32450331125827814,
+          "layer": 0,
+          "lost": 462,
+          "overlap": 294,
+          "union": 906
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 1,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 2,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 3,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 4,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 1,
+          "gained": 1,
+          "jaccard": 0.0,
+          "layer": 5,
+          "lost": 0,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 6,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 7,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 8,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 2,
+          "gained": 2,
+          "jaccard": 0.0,
+          "layer": 9,
+          "lost": 0,
+          "overlap": 0,
+          "union": 2
+        },
+        {
+          "base": 2,
+          "ft": 7,
+          "gained": 7,
+          "jaccard": 0.0,
+          "layer": 10,
+          "lost": 2,
+          "overlap": 0,
+          "union": 9
+        },
+        {
+          "base": 4,
+          "ft": 27,
+          "gained": 26,
+          "jaccard": 0.03333333333333333,
+          "layer": 11,
+          "lost": 3,
+          "overlap": 1,
+          "union": 30
+        },
+        {
+          "base": 16,
+          "ft": 11,
+          "gained": 10,
+          "jaccard": 0.038461538461538464,
+          "layer": 12,
+          "lost": 15,
+          "overlap": 1,
+          "union": 26
+        },
+        {
+          "base": 16,
+          "ft": 17,
+          "gained": 13,
+          "jaccard": 0.13793103448275862,
+          "layer": 13,
+          "lost": 12,
+          "overlap": 4,
+          "union": 29
+        },
+        {
+          "base": 10,
+          "ft": 12,
+          "gained": 10,
+          "jaccard": 0.1,
+          "layer": 14,
+          "lost": 8,
+          "overlap": 2,
+          "union": 20
+        },
+        {
+          "base": 24,
+          "ft": 34,
+          "gained": 28,
+          "jaccard": 0.11538461538461539,
+          "layer": 15,
+          "lost": 18,
+          "overlap": 6,
+          "union": 52
+        },
+        {
+          "base": 21,
+          "ft": 19,
+          "gained": 13,
+          "jaccard": 0.17647058823529413,
+          "layer": 16,
+          "lost": 15,
+          "overlap": 6,
+          "union": 34
+        },
+        {
+          "base": 54,
+          "ft": 82,
+          "gained": 64,
+          "jaccard": 0.15254237288135594,
+          "layer": 17,
+          "lost": 36,
+          "overlap": 18,
+          "union": 118
+        },
+        {
+          "base": 78,
+          "ft": 111,
+          "gained": 92,
+          "jaccard": 0.11176470588235295,
+          "layer": 18,
+          "lost": 59,
+          "overlap": 19,
+          "union": 170
+        },
+        {
+          "base": 141,
+          "ft": 229,
+          "gained": 181,
+          "jaccard": 0.14906832298136646,
+          "layer": 19,
+          "lost": 93,
+          "overlap": 48,
+          "union": 322
+        },
+        {
+          "base": 125,
+          "ft": 256,
+          "gained": 216,
+          "jaccard": 0.11730205278592376,
+          "layer": 20,
+          "lost": 85,
+          "overlap": 40,
+          "union": 341
+        },
+        {
+          "base": 63,
+          "ft": 167,
+          "gained": 148,
+          "jaccard": 0.09004739336492891,
+          "layer": 21,
+          "lost": 44,
+          "overlap": 19,
+          "union": 211
+        },
+        {
+          "base": 64,
+          "ft": 214,
+          "gained": 194,
+          "jaccard": 0.07751937984496124,
+          "layer": 22,
+          "lost": 44,
+          "overlap": 20,
+          "union": 258
+        },
+        {
+          "base": 155,
+          "ft": 313,
+          "gained": 255,
+          "jaccard": 0.14146341463414633,
+          "layer": 23,
+          "lost": 97,
+          "overlap": 58,
+          "union": 410
+        },
+        {
+          "base": 121,
+          "ft": 280,
+          "gained": 247,
+          "jaccard": 0.08967391304347826,
+          "layer": 24,
+          "lost": 88,
+          "overlap": 33,
+          "union": 368
+        },
+        {
+          "base": 127,
+          "ft": 297,
+          "gained": 247,
+          "jaccard": 0.13368983957219252,
+          "layer": 25,
+          "lost": 77,
+          "overlap": 50,
+          "union": 374
+        },
+        {
+          "base": 103,
+          "ft": 264,
+          "gained": 235,
+          "jaccard": 0.08579881656804733,
+          "layer": 26,
+          "lost": 74,
+          "overlap": 29,
+          "union": 338
+        },
+        {
+          "base": 97,
+          "ft": 205,
+          "gained": 179,
+          "jaccard": 0.09420289855072464,
+          "layer": 27,
+          "lost": 71,
+          "overlap": 26,
+          "union": 276
+        },
+        {
+          "base": 77,
+          "ft": 148,
+          "gained": 132,
+          "jaccard": 0.07655502392344497,
+          "layer": 28,
+          "lost": 61,
+          "overlap": 16,
+          "union": 209
+        },
+        {
+          "base": 40,
+          "ft": 115,
+          "gained": 105,
+          "jaccard": 0.06896551724137931,
+          "layer": 29,
+          "lost": 30,
+          "overlap": 10,
+          "union": 145
+        },
+        {
+          "base": 38,
+          "ft": 134,
+          "gained": 123,
+          "jaccard": 0.06832298136645963,
+          "layer": 30,
+          "lost": 27,
+          "overlap": 11,
+          "union": 161
+        },
+        {
+          "base": 20,
+          "ft": 104,
+          "gained": 100,
+          "jaccard": 0.03333333333333333,
+          "layer": 31,
+          "lost": 16,
+          "overlap": 4,
+          "union": 120
+        },
+        {
+          "base": 30,
+          "ft": 130,
+          "gained": 123,
+          "jaccard": 0.0457516339869281,
+          "layer": 32,
+          "lost": 23,
+          "overlap": 7,
+          "union": 153
+        },
+        {
+          "base": 83,
+          "ft": 235,
+          "gained": 218,
+          "jaccard": 0.05647840531561462,
+          "layer": 33,
+          "lost": 66,
+          "overlap": 17,
+          "union": 301
+        },
+        {
+          "base": 120,
+          "ft": 259,
+          "gained": 242,
+          "jaccard": 0.04696132596685083,
+          "layer": 34,
+          "lost": 103,
+          "overlap": 17,
+          "union": 362
+        },
+        {
+          "base": 56,
+          "ft": 136,
+          "gained": 134,
+          "jaccard": 0.010526315789473684,
+          "layer": 35,
+          "lost": 54,
+          "overlap": 2,
+          "union": 190
+        }
+      ],
+      "plots": {
+        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=ta__span=tgt__plot=jaccard_per_layer.pdf"
+      },
+      "totals": {
+        "base_total": 2441.0,
+        "ft_total": 4253.0,
+        "gained_total": 3495.0,
+        "jaccard_global": 0.1276954177897574,
+        "jaccard_mean_layer": 0.26600144633857714,
+        "lost_total": 1683.0,
+        "num_layers": 36.0,
+        "overlap_total": 758.0,
+        "union_total": 5936.0
+      }
+    },
+    "te": {
+      "per_layer": [
+        {
+          "base": 547,
+          "ft": 285,
+          "gained": 124,
+          "jaccard": 0.2399403874813711,
+          "layer": 0,
+          "lost": 386,
+          "overlap": 161,
+          "union": 671
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 1,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 2,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 3,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 4,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 1,
+          "gained": 1,
+          "jaccard": 0.0,
+          "layer": 5,
+          "lost": 0,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 6,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 7,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 0,
+          "ft": 1,
+          "gained": 1,
+          "jaccard": 0.0,
+          "layer": 8,
+          "lost": 0,
+          "overlap": 0,
+          "union": 1
+        },
+        {
+          "base": 0,
+          "ft": 0,
+          "gained": 0,
+          "jaccard": 1.0,
+          "layer": 9,
+          "lost": 0,
+          "overlap": 0,
+          "union": 0
+        },
+        {
+          "base": 1,
+          "ft": 6,
+          "gained": 6,
+          "jaccard": 0.0,
+          "layer": 10,
+          "lost": 1,
+          "overlap": 0,
+          "union": 7
+        },
+        {
+          "base": 8,
+          "ft": 10,
+          "gained": 9,
+          "jaccard": 0.058823529411764705,
+          "layer": 11,
+          "lost": 7,
+          "overlap": 1,
+          "union": 17
+        },
+        {
+          "base": 13,
+          "ft": 6,
+          "gained": 6,
+          "jaccard": 0.0,
+          "layer": 12,
+          "lost": 13,
+          "overlap": 0,
+          "union": 19
+        },
+        {
+          "base": 14,
+          "ft": 16,
+          "gained": 12,
+          "jaccard": 0.15384615384615385,
+          "layer": 13,
+          "lost": 10,
+          "overlap": 4,
+          "union": 26
+        },
+        {
+          "base": 10,
+          "ft": 8,
+          "gained": 5,
+          "jaccard": 0.2,
+          "layer": 14,
+          "lost": 7,
+          "overlap": 3,
+          "union": 15
+        },
+        {
+          "base": 26,
+          "ft": 31,
+          "gained": 23,
+          "jaccard": 0.16326530612244897,
+          "layer": 15,
+          "lost": 18,
+          "overlap": 8,
+          "union": 49
+        },
+        {
+          "base": 19,
+          "ft": 21,
+          "gained": 14,
+          "jaccard": 0.21212121212121213,
+          "layer": 16,
+          "lost": 12,
+          "overlap": 7,
+          "union": 33
+        },
+        {
+          "base": 61,
+          "ft": 79,
+          "gained": 62,
+          "jaccard": 0.13821138211382114,
+          "layer": 17,
+          "lost": 44,
+          "overlap": 17,
+          "union": 123
+        },
+        {
+          "base": 81,
+          "ft": 106,
+          "gained": 81,
+          "jaccard": 0.15432098765432098,
+          "layer": 18,
+          "lost": 56,
+          "overlap": 25,
+          "union": 162
+        },
+        {
+          "base": 138,
+          "ft": 200,
+          "gained": 157,
+          "jaccard": 0.14576271186440679,
+          "layer": 19,
+          "lost": 95,
+          "overlap": 43,
+          "union": 295
+        },
+        {
+          "base": 122,
+          "ft": 241,
+          "gained": 206,
+          "jaccard": 0.10670731707317073,
+          "layer": 20,
+          "lost": 87,
+          "overlap": 35,
+          "union": 328
+        },
+        {
+          "base": 60,
+          "ft": 160,
+          "gained": 143,
+          "jaccard": 0.08374384236453201,
+          "layer": 21,
+          "lost": 43,
+          "overlap": 17,
+          "union": 203
+        },
+        {
+          "base": 60,
+          "ft": 207,
+          "gained": 186,
+          "jaccard": 0.08536585365853659,
+          "layer": 22,
+          "lost": 39,
+          "overlap": 21,
+          "union": 246
+        },
+        {
+          "base": 139,
+          "ft": 296,
+          "gained": 238,
+          "jaccard": 0.15384615384615385,
+          "layer": 23,
+          "lost": 81,
+          "overlap": 58,
+          "union": 377
+        },
+        {
+          "base": 115,
+          "ft": 266,
+          "gained": 234,
+          "jaccard": 0.09169054441260745,
+          "layer": 24,
+          "lost": 83,
+          "overlap": 32,
+          "union": 349
+        },
+        {
+          "base": 130,
+          "ft": 274,
+          "gained": 227,
+          "jaccard": 0.13165266106442577,
+          "layer": 25,
+          "lost": 83,
+          "overlap": 47,
+          "union": 357
+        },
+        {
+          "base": 105,
+          "ft": 257,
+          "gained": 224,
+          "jaccard": 0.10030395136778116,
+          "layer": 26,
+          "lost": 72,
+          "overlap": 33,
+          "union": 329
+        },
+        {
+          "base": 95,
+          "ft": 189,
+          "gained": 165,
+          "jaccard": 0.09230769230769231,
+          "layer": 27,
+          "lost": 71,
+          "overlap": 24,
+          "union": 260
+        },
+        {
+          "base": 71,
+          "ft": 147,
+          "gained": 129,
+          "jaccard": 0.09,
+          "layer": 28,
+          "lost": 53,
+          "overlap": 18,
+          "union": 200
+        },
+        {
+          "base": 36,
+          "ft": 111,
+          "gained": 103,
+          "jaccard": 0.05755395683453238,
+          "layer": 29,
+          "lost": 28,
+          "overlap": 8,
+          "union": 139
+        },
+        {
+          "base": 43,
+          "ft": 127,
+          "gained": 115,
+          "jaccard": 0.0759493670886076,
+          "layer": 30,
+          "lost": 31,
+          "overlap": 12,
+          "union": 158
+        },
+        {
+          "base": 23,
+          "ft": 95,
+          "gained": 91,
+          "jaccard": 0.03508771929824561,
+          "layer": 31,
+          "lost": 19,
+          "overlap": 4,
+          "union": 114
+        },
+        {
+          "base": 33,
+          "ft": 116,
+          "gained": 109,
+          "jaccard": 0.04929577464788732,
+          "layer": 32,
+          "lost": 26,
+          "overlap": 7,
+          "union": 142
+        },
+        {
+          "base": 94,
+          "ft": 226,
+          "gained": 203,
+          "jaccard": 0.07744107744107744,
+          "layer": 33,
+          "lost": 71,
+          "overlap": 23,
+          "union": 297
+        },
+        {
+          "base": 141,
+          "ft": 241,
+          "gained": 223,
+          "jaccard": 0.04945054945054945,
+          "layer": 34,
+          "lost": 123,
+          "overlap": 18,
+          "union": 364
+        },
+        {
+          "base": 61,
+          "ft": 119,
+          "gained": 116,
+          "jaccard": 0.01694915254237288,
+          "layer": 35,
+          "lost": 58,
+          "overlap": 3,
+          "union": 177
+        }
+      ],
+      "plots": {
+        "counts_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=counts_base_ft_gained_lost.pdf",
+        "jaccard_pdf": "/home/baban/scripts/Language-Neurons-Manipulation/compare_reports/COMPARE__span=tgt__langs=hi-bn-ta-te__base=tgt__ft=tgt__lang=te__span=tgt__plot=jaccard_per_layer.pdf"
+      },
+      "totals": {
+        "base_total": 2246.0,
+        "ft_total": 3842.0,
+        "gained_total": 3213.0,
+        "jaccard_global": 0.11522256823594065,
+        "jaccard_mean_layer": 0.27121214677815764,
+        "lost_total": 1617.0,
+        "num_layers": 36.0,
+        "overlap_total": 629.0,
+        "union_total": 5459.0
+      }
+    }
+  },
+  "span": "tgt"
+}

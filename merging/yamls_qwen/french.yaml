@@ -1,0 +1,46 @@
+### model
+model_name_or_path: Qwen/Qwen2.5-3B-Instruct
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+
+### dataset
+dataset: MT_En_French
+eval_dataset: MT_En_French_valid
+template: qwen
+cutoff_len: 1024
+overwrite_cache: true
+preprocessing_num_workers: 16
+flash_attn: auto
+dataset_dir: /workspace/data
+### output
+output_dir: /workspace/MT_En_French
+logging_steps: 10
+save_steps: 5000
+plot_loss: true
+
+### train
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 16
+learning_rate: 5.0e-5
+max_samples: 1000000
+lr_scheduler_type: inverse_sqrt
+pure_bf16: true
+ddp_timeout: 180000000
+max_grad_norm: 1.0
+report_to: tensorboard 
+trust_remote_code: true
+include_num_input_tokens_seen: true
+optim: adamw_torch
+
+
+# Valid
+
+per_device_eval_batch_size: 16
+eval_strategy: steps
+save_total_limit: 1
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+eval_steps: 5000
