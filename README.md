@@ -1,4 +1,4 @@
-# TACL MT Model Merging
+# MT Model Merging
 
 This repository contains code and analysis artifacts for our multilingual machine translation model-merging experiments.
 
